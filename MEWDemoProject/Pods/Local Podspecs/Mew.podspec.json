@@ -1,0 +1,30 @@
+{
+  "name": "Mew",
+  "version": "0.1.0",
+  "summary": "The framework that support making MicroViewController.",
+  "description": "iOS MicroViewController support library.",
+  "homepage": "https://github.com/mercari/Mew",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": [
+    "Mercari, Inc."
+  ],
+  "source": {
+    "git": "https://github.com/mercari/Mew.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "Sources/Mew/**/*.swift",
+  "resource_bundles": {
+    "Mew": [
+      "Sources/Mew/ContainerView/_ContainerInterfaceBuilderView.xib"
+    ]
+  },
+  "frameworks": "UIKit",
+  "cocoapods_version": ">= 1.4.0",
+  "swift_version": "4.0"
+}

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HeaederViewController" customModule="MEWDemoProject" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="ZEm-wg-yr8" id="Nd7-hh-t4m"/>
+                <outlet property="pageControl" destination="zIy-oV-XEC" id="Krc-PE-cgd"/>
+                <outlet property="view" destination="iN0-l3-epB" id="as4-pP-zzn"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="none" prefetchingEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZEm-wg-yr8">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="2s0-jn-L6b">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="zmQ-0Q-3Fm"/>
+                        <outlet property="delegate" destination="-1" id="WqQ-Qd-Btp"/>
+                    </connections>
+                </collectionView>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="zIy-oV-XEC">
+                    <rect key="frame" x="168" y="128" width="39" height="37"/>
+                    <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </pageControl>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+            <constraints>
+                <constraint firstItem="ZEm-wg-yr8" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="07F-wM-h0G"/>
+                <constraint firstItem="ZEm-wg-yr8" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="48a-gh-H19"/>
+                <constraint firstItem="ZEm-wg-yr8" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="aAS-dG-OkB"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="zIy-oV-XEC" secondAttribute="bottom" constant="35" id="bVe-qi-eie"/>
+                <constraint firstItem="ZEm-wg-yr8" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="bj1-4k-gaZ"/>
+                <constraint firstItem="zIy-oV-XEC" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="in9-Fo-Vdt"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="130.40000000000001" y="-42.728635682158924"/>
+        </view>
+    </objects>
+</document>
